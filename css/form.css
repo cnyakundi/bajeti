@@ -31,7 +31,7 @@ body{
     border-radius: 30px;
 }
 .btn:hover{
-    background-color: greenyellow;
+    background-color: lightcoral;
     color: black;
 }
 .form-group{
@@ -50,7 +50,7 @@ body{
     border-radius: 30px;
 }
 .form-group .btn:hover{
-    background-color: greenyellow;
+    background-color: lightcoral;
     color: black;
 }
 .col-md-2 img{
