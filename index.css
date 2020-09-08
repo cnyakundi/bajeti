@@ -3,8 +3,11 @@
     padding: 0;
 }
 #showcase {
-    background: url('./assets/bajeti.png');
+    background: url('./assets/finance-concept-budgeting-on-computer-keyboard-background-DYR3X8.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
