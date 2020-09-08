@@ -12,28 +12,52 @@
     </head>
     <body>
        <div class="container">
-           <h1 class="form-title">BAJETI</h1>
+           <h1 class="form-title">BAJETI</h1><br>
            <div class="row">
                <div class="col-md-6">
                     <div class="budget-form">
                         <label for="budget-form">ENTER YOUR BUDGET</label><br>
-                        <input type="text" id="bugdet-form" name="budget-form"  size="25px" required>
+                        <input type="text" id="bugdet-form" name="budget-form"  size="25px" required><br><br>
                         <button type="submit" class="btn">CALCULATE</button>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="expense">ENTER YOUR EXPENSE</label>
+                        <input type="text" id="expense" name="expense" size="25px" required><br><br>
+                    
+                        <label for="expense-amount">ENTER YOUR EXPENSE AMOUNT</label>
+                        <input type="text" id="expense-amount" name="expense-amount" size="25px" required><br></br>
+                        <button type="submit" class="btn">ADD EXPENSE</button>
                     </div>
-
+                   
                </div>
                <div class="col-md-2">
                    <h3>BUDGET</h3>
-                   <img src="">
+                   <img src="form.images/budget.jpeg">
                </div>
                <div class="col-md-2">
                    <h3>EXPENSES</h3>
-                   <img src="">
+                   <img src="form.images/expenses.webp">
                </div>
                <div class="col-md-2">
                    <h3>BALANCE</h3>
-                   <img src="">
+                   <img src="form.images/balance.jpg">
                </div>
+            </div>
+            <div class="list">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="expense-title">EXPENSE TITLE</h3>
+                        <ul id="expense-title">
+
+                       </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3 class="expense-value">EXPENSE VALUE</h3>
+                        <ul id="expense-value">
+
+                        </ul>
+                    </div>
+                </div>
             </div>
        </div>
     </body>
