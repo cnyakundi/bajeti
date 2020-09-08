@@ -1,0 +1,23 @@
+.container{
+    border: 2px solid rgb(172, 125, 125);
+    position: absolute;
+    left: 400px;
+    top: 200px;
+    font-family: 'Poppins', sans-serif;
+}
+.form-title{
+    text-align: center;
+}
+.budget-form{
+    border: 2px solid red;
+    padding: 10px;
+}
+.budget-form .btn{
+    background-color: black;
+    color: wheat;
+    width: 120px;
+}
+.btn:hover{
+    background-color: red;
+    color: black;
+}
