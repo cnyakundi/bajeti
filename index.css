@@ -1,15 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 18px;
-    line-height: 1.8;
+    color: white;
 }
-#AboutBajeti {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/96843307-handwriting-announcement-text-showing-budget-planning-business-concept-for-financial-budgeting-writt.jpg');
+#showcase {
+    background-image:linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/bajeti1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -17,18 +13,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     padding: 0 20px;
 }
-#AboutBajeti h1 {
-    font-size: 60px;
-    color: honeydew;
+#showcase h1 {
+    font-size: 50px;
 }
-#AboutBajeti p {
-    font-size: 25px;
-    color: honeydew;
-    text-align: center;
+#showcase p {
+    font-size: 30px;
 }
-#AboutBajeti .button {
+#showcase .button {
     font-size: 20px;
     text-decoration: none;
     color: honeydew;
@@ -38,7 +32,17 @@ body {
     margin-top: 20px;
     background:green;
 }
-#AboutBajeti .button:hover {
+#showcase .button:hover {
     color: honeydew;
     background: darkgreen;
+}
+#About {
+    height: 30vh;
+    background: white;
+    color: black;
+    text-align: center;
+}
+#About h1 {
+    font-size: 50px;
+    font-weight: 900;
 }
