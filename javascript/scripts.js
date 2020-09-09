@@ -26,4 +26,12 @@ $("#budget-form").submit(function (e) {
     $("#expenses-amount").empty();
     $("#expenses-amount").append(0);
     $("#budget").val("");
-  });
+});
+  
+$("#expense-form").submit(function(e) {
+    e.preventDefault();
+    if (budget != undefined) {
+        var expenseTitle = $("#expense-title").val();
+        var expenseAmount = parseInt($("#expense-amount").val());
+    }
+});
