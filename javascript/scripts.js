@@ -67,4 +67,18 @@ if (newExpense.amount < balance) {
         "</tr>"
     );
     totalExpenses = 0;
-};
+
+        for (let i = 0; i < expenses.length; i++) {
+          totalExpenses += expenses[i].amount;
+        }
+        balance = budget - totalExpenses;
+
+        $("#balance-amount").empty();
+        $("#balance-amount").append(balance);
+        $("#expenses-amount").empty();
+        $("#expenses-amount").append(totalExpenses);
+      }else{
+        alert("You can't incur a deficit!!");
+      }
+    }
+    
