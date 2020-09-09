@@ -2,6 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <script
+         src="https://kit.fontawesome.com/02705fcf65.js"
+         crossorigin="anonymous"
+        ></script>
         <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
@@ -14,50 +18,70 @@
     <body>
        <div class="container">
            <h1 class="form-title">BAJETI</h1><br>
-           <div class="row">
+           <div class="row budget">
                <div class="col-md-6">
-                    <div class="budget-form">
-                        <label for="budget-form">ENTER YOUR BUDGET</label><br>
-                        <input type="text" id="bugdet-form" name="budget-form"  size="25px" required><br><br>
-                        <button type="submit" class="btn">CALCULATE</button>
-                    </div><br>
-                    <div class="form-group">
-                        <label for="expense">ENTER YOUR EXPENSE</label>
-                        <input type="text" id="expense" name="expense" size="25px" required><br><br>
-                    
-                        <label for="expense-amount">ENTER YOUR EXPENSE AMOUNT</label>
-                        <input type="text" id="expense-amount" name="expense-amount" size="25px" required><br></br>
-                        <button type="submit" class="btn">ADD EXPENSE</button>
-                    </div>
-                   
-               </div>
-               <div class="col-md-2">
-                   <h3>BUDGET</h3>
-                   <img src="form.images/budget.jpeg">
-               </div>
-               <div class="col-md-2">
-                   <h3>EXPENSES</h3>
-                   <img src="form.images/expenses.webp">
-               </div>
-               <div class="col-md-2">
-                   <h3>BALANCE</h3>
-                   <img src="form.images/balance.jpg">
-               </div>
-            </div>
-            <div class="list">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h3 class="expense-title">EXPENSE TITLE</h3>
-                        <ul id="expense-title">
+                    <form id="budget-form">
+                        <div class="form-group">
 
-                       </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <h3 class="expense-value">EXPENSE VALUE</h3>
-                        <ul id="expense-value">
+                            <label for="budget">ENTER YOUR BUDGET</label><br>
+                            <input type="number" id="bugdet"  size="25px" required>
+                        </div>
+                        <button type="submit" class="btn">ENTER</button>
+                    </form>   
+               </div>
+               <div class="col-md-2">
+                   <h5>BUDGET</h5>
+                   <i class="fas fa-money-bill fa-3x blue"></i>
+                   <p class="green">
+                       <i class="fas fa-dollar-sign fa-2x"></i>
+                       <span id="budget-amount"></span>
+                   </p>
+               </div>
+               <div class="col-md-2">
+                   <h5>EXPENSES</h5>
+                   <br>
+                   <i class="fas fa-credit-card fa-3x blue"></i>
+                   <p class="red">
+                       <i class="fas fa-dollar-sign fa-2x"></i>
+                       <span id="expenses-amount"></span>
+                   </p>
+               </div>
+               <div class="col-md-2">
+                   <h5>BALANCE</h5><br>
+                   <i class="fas fa-dollar-sign fa-3x blue"></i><br>
+                   <p class="green">
+                       <i class="fas fa-dollar-sign fa-2x"></i>
+                       <span id="balance-amount"></span>
+                   </p>
+               </div>
+            </div><br><br><br>
+            <div class="row expense">
+                <div class="col-md-6 form">
+                    <form id="expense-form">
+                        <div class="form-group">
+                            <label for="expense-title">ENTER YOUR EXPENSE</label><br>
+                            <input type="text" id="expense-amount" size="20px" required><br><br>
+                        </div>
+                        <div class="form-group">
+                            <label for="expense-amount">ENTER YOUR EXPENSE AMOUNT</label>
+                            <input type="number" id="expense-amount" size="25px" required><br></br>
+                        </div>
+                        <button type="submit" class="btn">CALCULATE</button><br><br>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">EXPENSE TITLE</th>
+                                <th scope="col">EXPENSE VALUE</th>
+                            </tr>
+                        </thead>
 
-                        </ul>
-                    </div>
+                        <tbody id="expense-summary">
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
        </div>
