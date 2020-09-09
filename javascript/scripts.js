@@ -81,4 +81,7 @@ if (newExpense.amount < balance) {
         alert("You can't incur a deficit!!");
       }
     }
-    
+
+    $("#expense-title").val("");
+    $("#expense-amount").val("");
+  });
