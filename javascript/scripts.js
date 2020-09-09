@@ -85,3 +85,18 @@ if (newExpense.amount < balance) {
     $("#expense-title").val("");
     $("#expense-amount").val("");
   });
+
+  for (let i = 1; i <= 100; i++) {
+    $(document).on("click", "#del-" + i, function () {
+      var amountToDelete = parseInt($("#val-" + i).text());
+      $("#expense-" + i).remove();
+      expenses = expenses.slice(i - 1, 1);
+      balance = balance + amountToDelete;
+      totalExpenses -= amountToDelete;
+      $("#expenses-amount").empty();
+      $("#expenses-amount").append(totalExpenses);
+      $("#balance-amount").empty();
+      $("#balance-amount").append(balance);
+    });
+  }
+});
