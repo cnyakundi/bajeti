@@ -35,3 +35,36 @@ $("#expense-form").submit(function(e) {
         var expenseAmount = parseInt($("#expense-amount").val());
     }
 });
+
+var newExpense = new Expense(expenseTitle, expenseAmount);
+
+if (newExpense.amount < balance) {
+    expenses.push(newExpense);
+
+    $("#expense-summary").append(
+        "<tr id='expense-" +
+        expenses.length +
+        "'>" +
+        "<td>" +
+        newExpense.title +
+        "</td>" +
+        "<td>" +
+        "<p>" +
+        '<i class="fas fa-dollar-sign"></i>' +
+        "<span id='val-" +
+        expenses.length +
+        "'>" +
+        newExpense.amount +
+        " " +
+        "</span>" +
+        "</p>" +
+        "</td>" +
+        "<td>" +
+        '<i class="fas fa-trash-alt red" id="del-' +
+        expenses.length +
+        '"></i>' +
+        "</td>" +
+        "</tr>"
+    );
+    totalExpenses = 0;
+};
