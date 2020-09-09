@@ -26,6 +26,7 @@ body {
 #showcase p {
     font-size: 25px;
     color: honeydew;
+    text-align: center;
 }
 #showcase .button {
     font-size: 20px;
