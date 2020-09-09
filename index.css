@@ -8,7 +8,7 @@ body {
     font-size: 18px;
     line-height: 1.8;
 }
-#showcase {
+#AboutBajeti {
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./assets/96843307-handwriting-announcement-text-showing-budget-planning-business-concept-for-financial-budgeting-writt.jpg');
     background-size: cover;
     background-position: center;
@@ -19,16 +19,16 @@ body {
     align-items: center;
     padding: 0 20px;
 }
-#showcase h1 {
+#AboutBajeti h1 {
     font-size: 60px;
     color: honeydew;
 }
-#showcase p {
+#AboutBajeti p {
     font-size: 25px;
     color: honeydew;
     text-align: center;
 }
-#showcase .button {
+#AboutBajeti .button {
     font-size: 20px;
     text-decoration: none;
     color: honeydew;
@@ -38,7 +38,7 @@ body {
     margin-top: 20px;
     background:green;
 }
-#showcase .button:hover {
+#AboutBajeti .button:hover {
     color: honeydew;
     background: darkgreen;
 }
