@@ -1,0 +1,79 @@
+body{
+    background-image: url(../form.images/background.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.form-title{
+    text-align: center;
+    font-weight: bold;
+}
+.container {
+    margin-top: 200px;
+    width: 1600px;
+    height: 700px;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+  }
+
+.jumbotron {
+  background-color: lightblue;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .budget .col-md-6 {
+    height: 100%;
+    border: 2px solid darkslategray;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  .btn{
+    background-color: rgb(40, 80, 110);
+    border-radius: 30px;
+    color: white;
+  }
+  .btn:hover{
+    background-color:  rgb(10, 136, 233);
+  }
+  .form {
+    height: 100%;
+    border: 2px solid black;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  h5{
+      position: absolute;
+      top: -30px;
+      left: 50px;
+      font-weight: bold;
+  }
+  td {
+    color: red;
+  }
+  .blue {
+    color: blue;
+  }
+  
+  .red {
+    color: red;
+  }
+  
+  .green {
+    color: green;
+  }
+  
+  .budget {
+    align-items: center;
+  }
+  
+  .budget .col-md-2 {
+    text-align: center;
+  }
+  
+  #budget-amount,
+  #expenses-amount,
+  #balance-amount {
+    font-size: 2em;
+  }
+  
