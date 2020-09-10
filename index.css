@@ -36,16 +36,3 @@ body {
     color: honeydew;
     background: darkgreen;
 }
-#About {
-    height: 30vh;
-    background: white;
-    color: black;
-    text-align: center;
-}
-#About h1 {
-    font-size: 50px;
-    font-weight: 900;
-}
-#About p {
-    font-size: 25px;
-}
