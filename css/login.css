@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(63, 131, 184);
+    background-image: url(../form.images/bajeti1.jpg);
     font-family: 'Poppins', sans-serif;
 }
 h1{
@@ -13,6 +13,7 @@ h1{
     left: 350px;
     top: 90px;
     background-color: white;
+    opacity: 0.9;
 }
 .email{
     font-size: 30px;
